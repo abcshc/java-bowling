@@ -8,10 +8,8 @@ import org.slf4j.LoggerFactory;
 
 import exception.InvalidPlayerNameException;
 
-public class Player {
-	
+public class Player {	
 	private static final Logger logger = LoggerFactory.getLogger(Player.class);
-
 	private String name;
 	private SetOfFrame setOfFrame;
 
@@ -32,7 +30,7 @@ public class Player {
 	}
 
 	public boolean isEndCurrentFrame() {
-		return setOfFrame.isNextFrame();
+		return setOfFrame.isEndCurrentFrame();
 	}
 
 	public int getTotalScore() {

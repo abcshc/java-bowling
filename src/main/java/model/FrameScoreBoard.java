@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FrameScoreBoard {
-
 	private List<Score> scores = new ArrayList<Score>();
 	private int currentIndex = -1;
 	private int bonusScore = 0;

@@ -8,10 +8,8 @@ import org.slf4j.LoggerFactory;
 
 import exception.InvalidGameSetException;
 
-public class Game {
-	
+public class Game {	
 	private static final Logger logger = LoggerFactory.getLogger(Game.class);
-
 	private boolean endSetGame = false;
 	private List<Player> players;
 	private int numFrame;

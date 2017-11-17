@@ -3,8 +3,7 @@ package model.frame;
 import model.FrameScoreBoard;
 import model.Pins;
 
-public abstract class Frame {
-	
+public abstract class Frame {	
 	protected FrameScoreBoard frameScoreBoard = new FrameScoreBoard();
 	protected int shotCount = 0;
 	protected Pins pins = new Pins();

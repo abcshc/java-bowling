@@ -22,7 +22,7 @@ public class ResultViewTest {
 		game.shot(10);
 		game.shot(10);
 		game.shot(2);
-		game.shot(2);
+		game.shot(8);
 		game.shot(2);
 		game.shot(2);
 		game.shot(2);
@@ -32,6 +32,6 @@ public class ResultViewTest {
 		ResultView resultView = new ResultView();
 		resultView.currentResultView(game);
 		
-		assertEquals(214, game.getTotalScore(0));
+		assertEquals(228, game.getTotalScore(0));
 	}
 }

@@ -1,6 +1,5 @@
 package model;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -9,21 +8,9 @@ import exception.InvalidFrameException;
 import model.frame.Frame;
 
 public class SetOfFrame {
-
 	private List<Frame> fullFrame = new ArrayList<Frame>();
 	private int currentFrameIndex = 0;
 	private int maxFrame;
-	private boolean isNextFrame = false;
-
-	public void shot(int score) {
-		isNextFrame = false;
-		currentFrame().shot(score);
-		addBonusScore(score);
-		if (isEndCurrentFrame()) {
-			isNextFrame = true;
-			currentFrameIndex++;
-		}
-	}
 
 	public SetOfFrame(int numFrame) {
 		maxFrame = numFrame;
@@ -33,8 +20,12 @@ public class SetOfFrame {
 		fullFrame.add(new LastFrame());
 	}
 
-	public boolean isNextFrame() {
-		return isNextFrame;
+	public void shot(int score) {
+		if (isEndCurrentFrame()) {
+			currentFrameIndex++;
+		}
+		currentFrame().shot(score);
+		addBonusScore(score);
 	}
 
 	private void addBonusScore(int score) {

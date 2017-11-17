@@ -4,7 +4,6 @@ import exception.InvalidFrameScoreException;
 import model.frame.Frame;
 
 public class LastFrame extends Frame {
-
 	private boolean isNewPins = false;
 
 	@Override

@@ -4,7 +4,6 @@ import exception.InvalidFrameScoreException;
 import model.frame.Frame;
 
 public class NormalFrame extends Frame{
-
 	@Override
 	public void shot(int score) throws InvalidFrameScoreException {
 		checkInvalidException(score);

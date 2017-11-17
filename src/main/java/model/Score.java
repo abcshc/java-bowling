@@ -1,7 +1,6 @@
 package model;
 
-public class Score {
-	
+public class Score {	
 	private int score;
 	private boolean isNextBall;
 
